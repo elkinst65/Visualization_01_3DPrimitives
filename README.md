@@ -20,6 +20,8 @@ For this project, I took a set of data from an air defense exercise in 2012.  Th
 * The radar data are transparent spheres - each sphere is a separate target as perceived by that sensor.  This will give you a feel for how crowded the airspace was where we tested.
 * You can zoom into/out of the center by scrolling the mouse wheel.
 * You can raise/lower your viewing elevation angle by dragging the mouse up/down with the left mouse button
+* You can speed up the playback by pressing the keypad "+" key
+* You can slow down the playback by pressing the keypad "-" key
 * You can display all radar data simultaneously (the default) by pressing the keypad "0" key
 * You can display sensor 1 (DRP10) only by pressing the keypad "1" key
 * You can display sensor 2 (DRP12) only by pressing the keypad "2" key
