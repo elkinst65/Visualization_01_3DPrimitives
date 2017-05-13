@@ -119,6 +119,25 @@ public void keyPressed() {
     DRP15.hide();
     DRP06.show();
   }
+  
+  
+  // Reset playback
+  // Key == '7'
+  if (keyCode == 135) {
+	  
+	  println("\nReset playback\n");
+	  CAP1 = new Player("CAP1.csv",posScale, true, true, 0, 255, 0);
+	  CAP2 = new Player("CAP2.csv",posScale, true, true, 0, 255, 255);
+	  DRP10A = new Player("DRP10A.csv",posScale, false, true, 255, 0, 0);
+	  DRP12A = new Player("DRP12A.csv",posScale, false, true, 255, 255, 0);
+	  DRP14B = new Player("DRP14B.csv",posScale, false, true, 255,128,0);
+	  DRP15 = new Player("DRP15.csv",posScale,false,true,255,0,255);
+	  DRP06 = new Player("DRP06.csv",posScale,false,true,0,0,255);
+
+	  gameTimer = CAP1.offset;
+	  if (CAP2.offset < gameTimer) {gameTimer = CAP2.offset;}
+
+  }
 }
 
 public void draw() {
